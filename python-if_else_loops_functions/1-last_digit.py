@@ -21,4 +21,4 @@ elif number > 0:
     else:
         print("unrecognizable")
 else:
-    print("number unrecognized")
+    print(f"Last digit of {str(number)} is {str(number)[-1]} and is 0")
