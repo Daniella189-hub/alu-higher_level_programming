@@ -18,6 +18,6 @@ elif number < 0:
     elif last_digit == 0:
         print(f"Last digit of {str(number)} is {last_digit} and is 0")
     elif last_digit != 0 and last_digit < -6:
-        print(f"Last digit is {str(number)} is {last_digit  and is less than 6 and not 0")
+        print(f"Last digit is {str(number)} is {last_digit}  and is less than 6 and not 0")
 else:
     print("shift")
