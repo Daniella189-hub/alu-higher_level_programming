@@ -2,6 +2,6 @@
 def multiple_returns(sentence):
     tuple(sentence)
     if sentence == "":
-        return None
+        return (len(tuple(sentence)), None)
     else:
         return (len(tuple(sentence)), sentence[0])
