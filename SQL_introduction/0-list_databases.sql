@@ -1,2 +1,2 @@
---this is showing database available
+-- Code To Show All Database By Daniella
 SHOW DATABASES;
