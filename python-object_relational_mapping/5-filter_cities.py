@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """This module provides a script that lists all cities of a given state.
-   The script safely handles user inputs using 
+    The script safely handles user inputs using
     parameterized placeholders to prevent
-    SQL injection vulnerabilities, fetching results sorted by city ID. """
+    SQL injection vulnerabilities,
+    fetching results sorted by city ID."""
 import MySQLdb
 import sys
 
@@ -25,7 +26,7 @@ if __name__ == "__main__":
 
     # Establish query execution cursor context
     cursor = db.cursor()
-    # Formulate relational query using a safe %s 
+    # Formulate relational query using a safe %s
     # placeholder for parameter
     query = (
         "SELECT cities.name "
@@ -35,7 +36,7 @@ if __name__ == "__main__":
         "ORDER BY cities.id ASC"
     )
     cursor.execute(query, (state_name,))
-    # Collect matching city names and print 
+    # Collect matching city names and print
     # joined by a comma and space
     query_rows = cursor.fetchall()
     cities_list = [row[0] for row in query_rows]
