@@ -39,4 +39,3 @@ if __name__ == "__main__":
     # Step 7: Safely close all sessions and connections
     cursor.close()
     db.close()
-

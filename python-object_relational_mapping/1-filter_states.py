@@ -20,8 +20,8 @@ if __name__ == "__main__":
 
     # Create a cursor object
     cursor = db.cursor()
-    
-    # Execute query to fetch states starting with 'N' (case-sensitive binary comparison)
+    # Execute query to fetch states starting with
+    # 'N' (case-sensitive binary comparison)
     cursor.execute(
         "SELECT * FROM states WHERE name LIKE BINARY 'N%' ORDER BY id ASC"
     )
@@ -34,4 +34,3 @@ if __name__ == "__main__":
     # Close the cursor and connection
     cursor.close()
     db.close()
-

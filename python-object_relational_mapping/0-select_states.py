@@ -30,4 +30,3 @@ if __name__ == "__main__":
     # Clean up and close connections
     cursor.close()
     db.close()
-

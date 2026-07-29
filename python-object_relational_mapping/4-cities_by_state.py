@@ -42,4 +42,3 @@ if __name__ == "__main__":
     # Terminate the current cursor pipeline and clean up network socket links
     cursor.close()
     db.close()
-

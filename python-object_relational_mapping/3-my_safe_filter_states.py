@@ -38,4 +38,3 @@ if __name__ == "__main__":
     # Step 7: Clear runtime contexts and close connections safely
     cursor.close()
     db.close()
-
